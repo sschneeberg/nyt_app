@@ -6,11 +6,25 @@ const axios = require('axios');
 const ejsLayouts = require('express-ejs-layouts');
 const port = process.env.PORT || 3000;
 const api_key = process.env.API_KEY;
+const db = require('./models');
 
 app.set('view engine', 'ejs');
 app.use(ejsLayouts);
 app.use(express.static(__dirname + '/static'));
 app.use(express.urlencoded({ extended: false }));
+
+//db test
+
+db.movie.findOrCreate({
+    where: {
+        title: 'Test movie',
+        byline: 'test',
+        headline: 'TEST',
+        pub_date: Date.now(),
+        url: 'https://thisisawebsite.com'
+
+    }
+}).then(response => console.log(response));
 
 //routes
 app.get('/:title', (req, res) => {

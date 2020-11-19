@@ -1,0 +1,17 @@
+{
+    "development": {
+        "database": "nytapp_development",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    },
+    "test": {
+        "database": "nytapp_test",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    },
+    "production": {
+        "database": "nytapp_production",
+        "host": "127.0.0.1",
+        "dialect": "postgres"
+    }
+}
