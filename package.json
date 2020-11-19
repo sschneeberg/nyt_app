@@ -1,0 +1,29 @@
+{
+  "name": "nyt_app",
+  "version": "1.0.0",
+  "description": "app using nyt api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sschneeberg/nyt_app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sschneeberg/nyt_app/issues"
+  },
+  "homepage": "https://github.com/sschneeberg/nyt_app#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "pg": "^8.5.1",
+    "sequelize": "^6.3.5"
+  }
+}
